@@ -75,3 +75,15 @@ p {
 .gift-box.open + .birthday-message {
     display: block;
 }
+
+
+@media (max-width: 600px) {
+    .birthday-message {
+        margin: 20px 15px;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
