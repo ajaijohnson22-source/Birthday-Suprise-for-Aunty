@@ -1,0 +1,77 @@
+body {
+    background-color: #241335;
+    color: #fff5e9;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #ffd700;
+}
+
+p {
+    color: #ffb6c1;
+}
+
+
+.gift-box {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: 60px auto;
+}
+
+.gift-body {
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+    width: 160px;
+    height: 130px;
+    background-color: #ce609e;
+    border-radius: 5px;
+}
+
+.gift-lid {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    width: 180px;
+    height: 40px;
+    background-color: #ffd700;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+
+.gift-lid {
+    transition: transform 0.8s ease;
+}
+
+.gift-box.open .gift-lid {
+    transform: translateY(-70px) rotate(-10deg);
+}
+
+.gift-box {
+    cursor: pointer;
+}
+
+
+.birthday-message {
+    display: none;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #44245c;
+    border: 2px solid #ffd700;
+    border-radius: 15px;
+    line-height: 1.8;
+}
+
+.birthday-message h2,
+.birthday-message h3 {
+    color: #ffd700;
+}
+
+.gift-box.open + .birthday-message {
+    display: block;
+}
